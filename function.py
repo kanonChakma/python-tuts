@@ -31,7 +31,6 @@ salary(6000,4000,thirdPerson=5000)
 
 
 #excepion
-
 try:
     res = int(input("Enter number: "))
     div =  3000/res
