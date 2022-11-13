@@ -1,0 +1,20 @@
+Identifier = value
+
+a =5
+
+when we store number 5 in the computer memory
+First it will get converted to this binary representation.Then it will get stored in the computer memory
+
+
+what is expression?
+a peice of code that produces value 
+
+packeges = bunch of related modules
+
+package is a container for multiple modules
+IN file system terms a package is a directory or folder
+
+path
+#Absolute Path  --start from root of our hard disk
+
+#Relative Path  --start from current directory

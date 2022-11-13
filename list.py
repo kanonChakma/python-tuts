@@ -8,7 +8,6 @@ print(numbers)
 
 
 #Find the largest numbers
-
 max = numbers[0]
 for num in numbers:
     if num>max:
@@ -16,20 +15,21 @@ for num in numbers:
 print(x)
 
 #--------------2d list------------
-matrix= [
+matrix = [
     [1,2,3,4],
     [5,6,7,8],
-    [9,10,11] ,
+    [9,10,11],
  ]
 
 print(matrix[0][1])
-
+ 
 for row in matrix:
     for col in row:
         print(col)
 
 #----list methods----
 ages =[67,89,12,44,50]
+
 #insert last in list
 ages.append(51) 
 
