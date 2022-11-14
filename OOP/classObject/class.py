@@ -15,3 +15,5 @@ point1.move()
 
 point2 = Point(6, 7)
 point2.move()
+
+print(point1.__dict__)
