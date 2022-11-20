@@ -18,3 +18,5 @@ path
 #Absolute Path  --start from root of our hard disk
 
 #Relative Path  --start from current directory
+
+python dynamic type language. type are determind at run time
