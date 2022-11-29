@@ -1,10 +1,11 @@
 #split method
-longString = "What are youd ddoing here budyy"
+longString = "What are you doing here budyy"
 word = longString.split(" ")
 print(word)
 
 #-------------
 nums = {
+
     "0": "zero",
     "1": "one",
     "2": "two",
@@ -16,9 +17,12 @@ nums = {
     "8": "eight",
     "9": "nine"
 }
+
 result = ""
 phones = input("Phone ")
 for phone in phones:
     result += nums.get(phone, "!")+" "
 
 print(result)
+
+

@@ -19,6 +19,16 @@ print("-----------------------------------")
 #-------HashSet-------
 mySet = set()
 mySet.add(10)
+
+#-----Queue---
+queue = deque()
+queue.append(20)
+queue = deque()
+queue.append(20)
+queue.append(30)
+queue.appendleft(10)
+print(queue)
+
 mySet.add(20)
 print(mySet)
 print(len(mySet))
@@ -29,6 +39,7 @@ print(mySet)
 
 #list to set
 print(set[1,2,3,4,5])
+
 #set comprehension
 mySet = {i for i in range(5)}
 print(mySet)
@@ -84,6 +95,19 @@ tupleMap = {(1,2): 3}
 print(tupleMap)
 
 tupleSet = set()
+
+#-----Queue---
+queue = deque()
+queue.append(20)
+queue.append(30)
+queue.appendleft(10)
+print(queue)#-----Queue---
+queue = deque()
+queue.append(20)
+queue.append(30)
+queue.appendleft(10)
+print(queue)
+
 tupleSet.add((1,2))
 print((1,2) in tupleSet)
 print(tupleSet)
@@ -144,15 +168,17 @@ nums.sort(reverse=True)
 names.sort()
 print(names)
 print("-----------------------")
+
 #sort by length
 names.sort(key=lambda x: len(x))
 print(names)
 print("-----------------------")
+
 #List comprehension
 allNums = [i for i in range(5)]
 print(allNums)
-
 print("-----------------------")
+
 #Arrays(called list in phyton)
 #insert middle 0(n)
 arr = [1,2,3,4,5]
@@ -171,18 +197,13 @@ print("-----------------------")
 #initialixe arr of size n with default value of 1
 arrr = [1]*5
 print(arrr)
-
-
-
-
-
-
 print("-----------------------")
+
 #Max/ Min Int
 float("inf")
 float("-inf")
 
-#python numbers are infineite so they never overflow
+#python numbers are infinite so they never overflow
 print(math.pow(2, 200))
 print(math.pow(2, 200) < float("inf"))
 print("-------------------------------")
@@ -208,9 +229,9 @@ print(math.floor(3/2)) #1
 print(math.sqrt(2)) #
 print(math.pow(2,3)) #8
 print("-----------------------")
+
 #---------multiple assignment------
 n, m = 3,"value"
-
 #increment
 n+=1
 
@@ -219,6 +240,7 @@ a = 5
 a = None
 print(a)
 print("-----------------------")
+
 #if statement
 a=10
 if a<6:
@@ -243,9 +265,13 @@ while j<9:
     print(j)
     j+=1
 print("-----------------------")
+
 #For loop
 for i in range(5,9):
     print(i) #5,6,7,8
 print("-----------------------")
+
 for i in range(5, 1, -1):
     print(i) #5,4,3,2
+
+
