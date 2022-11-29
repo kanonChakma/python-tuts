@@ -1,5 +1,5 @@
 #ind the duplicate number on a given integer array?
-ages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,1]
+ages = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
 #time complexty is O(n^2)
 def find_duplicate(nums, length):
@@ -13,8 +13,6 @@ def find_duplicate(nums, length):
 #can be find first sort then check element 
 #here time complxity will be O(nlogon) 
 #space complexity will be O(1)
-
-
 
 
 #using set
@@ -60,6 +58,24 @@ def find_duplicate(nums):
             break
     
     return check
+
+
+def find_duplicate(nums, length):
+    if len(nums)< 1:
+        return -1
+
+    slow = nums[0]
+    fast = nums[1]
+
+    while slow != fast:
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+    fast = 0
+    while fast != slow:
+        fast = nums[fast]
+        slow = nums[slow]
+    
+    return slow
 
 
 length = len(ages)
