@@ -61,7 +61,7 @@ while True:
         else:
             stop = False
             start = True
-            print("car  started!!!!")
+            myset("car  started!!!!")
 
     elif command =="stop":
         if stop:

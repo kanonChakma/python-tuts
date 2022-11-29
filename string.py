@@ -1,8 +1,8 @@
 #------string---------
-str = "thsi is string 'brother' "
-str = 'thsi is string "brother"'
-
+str = "this is string 'brother' "
+str = 'this is string "brother"'
 str = 'Plan Your destination'
+
 print(str[0], str[-1]) #P n
 print(str[0:4])  #Plan
 print(str[5:9]) #Your
