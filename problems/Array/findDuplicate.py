@@ -38,6 +38,9 @@ def find_duplicate(nums, length):
 
 #Optimal Solution
 #Linked List cycle methods
+# Time Complexity: O(n),
+# Auxiliary Space: O(1),
+
 def find_duplicate(nums):
     slow, fast = 0, 0
     check = 0
