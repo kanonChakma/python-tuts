@@ -95,6 +95,9 @@ tupleMap = {(1,2): 3}
 print(tupleMap)
 
 tupleSet = set()
+tupleSet.add((1,2))
+print((1,2) in tupleSet)
+print(tupleSet)
 
 #-----Queue---
 queue = deque()
@@ -108,9 +111,6 @@ queue.append(30)
 queue.appendleft(10)
 print(queue)
 
-tupleSet.add((1,2))
-print((1,2) in tupleSet)
-print(tupleSet)
 
 
 #Lists cannot be keys
