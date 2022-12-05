@@ -19,17 +19,30 @@ class LinkedList:
     def insert_values(self, values):
         for value in values:
             self.insert_end(value)
+ 
+    def detect_cycle_using_hashmap(self):
+        curr =  self.head
+        newSet = set()
 
+        while curr:
+            if curr in newSet:
+                return True
+            newSet.add(curr)
+
+            curr = curr.next
+        return False
+
+    #Floyd’s Cycle-Finding Algorithm
+    #Time complexity: O(N), Only one traversal of the loop is needed.
+    #Auxiliary Space: O(1).
     def detect_cycles(self):
-        slow =self.head
+        slow = self.head
         fast = self.head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
             if slow == fast:
                 return True
-            
-
         return False
 
     def remove_cycles(self):
@@ -79,8 +92,10 @@ if __name__ == '__main__':
     l1.print_list()
     l1.make_cycle(3)
     print(l1.detect_cycles())
+    print(l1.detect_cycle_using_hashmap())
     l1.remove_cycles()
     print(l1.detect_cycles())
+    print(l1.detect_cycle_using_hashmap())
 
 
 
