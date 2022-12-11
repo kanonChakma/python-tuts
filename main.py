@@ -20,7 +20,7 @@ print("-----------------------------------")
 mySet = set()
 mySet.add(10)
 
-#-----Queue---
+#-------Queue------
 queue = deque()
 queue.append(20)
 queue = deque()

@@ -10,7 +10,7 @@ favourite_color = input("Enter Favourite Color ");
 #----type of variable-----
 print(type(favourite_color))
 print(person_name + " likes " + favourite_color)
-
+    
 
 #taking input from user always string in python
 #convert strig 
